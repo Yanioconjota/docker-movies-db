@@ -1,10 +1,9 @@
-version: '3.8'
+version: '3'
 services:
   db:
     image: postgres:latest
     container_name: ${CONTAINER_NAME}
     environment:
-      POSTGRES_USER: ${USERNAME}
       POSTGRES_PASSWORD: ${PASSWORD}
       POSTGRES_DB: ${DB_NAME}
     ports:
